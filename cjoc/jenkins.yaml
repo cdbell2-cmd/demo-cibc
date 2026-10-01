@@ -1,0 +1,4 @@
+# JCasC for the CJOC (Operations Center) replica.
+jenkins:
+  systemMessage: "CJOC - demo replica generated from support bundle 001"
+  numExecutors: 0

@@ -1,0 +1,16 @@
+# Registers the CCT_DevOpsCOE managed controller under this CJOC.
+# Provisioning values (domain/index) from the controller bundle's
+# JVM startup args. Review resource requests against your demo quota.
+removeStrategy:
+  items: NONE
+  rbac: SYNC
+items:
+  - kind: managedController
+    name: CCT_DevOpsCOE
+    configuration:
+      kubernetes:
+        domain: cct-devopscoe
+        image: "cloudbees/cloudbees-core-mm:2.555.2.36756"
+        memory: 2048   # MiB - source ran with a 734 MB heap; 2Gi pod is a safe demo floor
+        cpus: 1.0
+        # storageClassName / storageSize: set to match the demo cluster
