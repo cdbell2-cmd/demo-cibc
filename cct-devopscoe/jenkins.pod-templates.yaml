@@ -1,0 +1,38 @@
+# OPTIONAL / REVIEW BEFORE APPLYING.
+# The 6 CloudBees pod templates captured on the source controller.
+# On the demo, merge these into your EXISTING kubernetes cloud
+# (match the cloud 'name:' to the demo's, usually 'kubernetes').
+# Source images point at artifactory.cibcdevops.com and will not pull
+# on the demo - swap to demo-reachable images or expect provisioning
+# to fail (labels/structure still demonstrate the topology).
+#
+# Raw source: 014_2026-09-25_13-29-29_support-bundle-CCT_DevOpsCOE-1790259315610/jenkins-root-configuration-files/com.cloudbees.jenkins.plugins.kube.templates.PodTemplatesConfiguration.xml
+jenkins:
+  clouds:
+    - kubernetes:
+        name: "kubernetes"
+        templates:
+          - name: "blackduck-conda"
+            label: "blackduck-conda"
+            # yaml: |
+            #   <copy the <yaml> block for this template from the raw source>
+          - name: "blackduck-python"
+            label: "blackduck-python"
+            # yaml: |
+            #   <copy the <yaml> block for this template from the raw source>
+          - name: "selenium-maven"
+            label: "selenium-maven"
+            # yaml: |
+            #   <copy the <yaml> block for this template from the raw source>
+          - name: "aoasg"
+            label: "aoasg"
+            # yaml: |
+            #   <copy the <yaml> block for this template from the raw source>
+          - name: "AO_ASG_ENVIRONMENTS_prod-isp-lite-env_uat-1_4-b2bpm"
+            label: "AO_ASG_ENVIRONMENTS_prod-isp-lite-env_uat-1_4-b2bpm"
+            # yaml: |
+            #   <copy the <yaml> block for this template from the raw source>
+          - name: "ansible-env-test"
+            label: "ansible-env-test"
+            # yaml: |
+            #   <copy the <yaml> block for this template from the raw source>

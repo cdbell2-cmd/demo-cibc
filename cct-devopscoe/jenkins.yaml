@@ -1,0 +1,164 @@
+# JCasC for the CCT_DevOpsCOE controller replica.
+# Reproduces: static JNLP agents, custom tools, folder health metrics.
+# NOTE: Kubernetes pod templates are in jenkins.pod-templates.yaml
+#       (review before merging - see README).
+jenkins:
+  systemMessage: "CCT_DevOpsCOE - demo replica generated from support bundle 014"
+  numExecutors: 0
+  nodes:
+    - permanent:
+        name: "aliimr-agent"
+        labelString: ""
+        remoteFS: "C:\\Jenkins"
+        numExecutors: 1
+        mode: NORMAL
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "caas-node-devopscoe"
+        labelString: "caas-node-alii"
+        remoteFS: "/jenkins"
+        numExecutors: 1
+        mode: EXCLUSIVE
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "caas-node-master"
+        labelString: "caas-node-master"
+        remoteFS: "/jenkins"
+        numExecutors: 1
+        mode: EXCLUSIVE
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "caas-node-test-austin"
+        labelString: "caas-node-austin"
+        remoteFS: "/home/jenkins"
+        numExecutors: 1
+        mode: EXCLUSIVE
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "devopscoe-on-prem-agent-cb4066339"
+        labelString: "aleen"
+        remoteFS: "/export/home/janmoham-adm/jenkins-agent"
+        numExecutors: 1
+        mode: NORMAL
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "ocp-caas-node"
+        labelString: "ocp-caas"
+        remoteFS: "/home/jenkins"
+        numExecutors: 1
+        mode: NORMAL
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "random-node-delete"
+        labelString: "caas-node-alii"
+        remoteFS: "/jenkins"
+        numExecutors: 1
+        mode: EXCLUSIVE
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "test-agent123"
+        labelString: "test12312313"
+        remoteFS: "/"
+        numExecutors: 1
+        mode: EXCLUSIVE
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "test11111"
+        labelString: ""
+        remoteFS: "/home/jenkins"
+        numExecutors: 1
+        mode: NORMAL
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "test_cibc_square"
+        labelString: "cibcsquare"
+        remoteFS: "/jenkins"
+        numExecutors: 1
+        mode: EXCLUSIVE
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+    - permanent:
+        name: "windows-test-pbpt"
+        labelString: "windows-pbpt-test"
+        remoteFS: "D:\\jenkins_remotedirectory"
+        numExecutors: 1
+        mode: EXCLUSIVE
+        retentionStrategy: "always"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: false
+              internalDir: "remoting"
+tool:
+  customTool:
+    installations:
+      - name: "Maven-3"
+        properties:
+          - installSource:
+              installers:
+                - zipExtractInstaller:
+                    url: "https://mirror.csclub.uwaterloo.ca/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz"
+                    subdir: "apache-maven-3.3.9/bin"
+      - name: "npm"
+unclassified:
+  abstractFolderConfiguration:
+    healthMetrics:
+      - worstChildHealthMetric:
+          nonRecursive: false
+      - averageChildHealthMetric
+      - jobStatusHealthMetric:
+          success: true
+          failure: true
+          unstable: true
+          unbuilt: true
+          countVirginJobs: false
+      - projectEnabledHealthMetric

@@ -1,0 +1,1321 @@
+# Representative job tree for the CCT_DevOpsCOE replica.
+# IMPORTANT: these are PLACEHOLDERS. Support bundles capture only
+# per-type item COUNTS (items.md), never the real job config.xml.
+# Source counts reproduced here:
+#   folders=34 freeStyle=43 pipeline=170 multibranch=5 maven(->freeStyle)=4
+removeStrategy:
+  items: NONE
+  rbac: SYNC
+items:
+  - kind: folder
+    name: team-01
+    displayName: team-01
+    items:
+      - kind: freeStyle
+        name: freestyle-001
+        description: "placeholder - real config not in support bundle"
+      - kind: freeStyle
+        name: freestyle-035
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-001
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-035
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-069
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-103
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-137
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: multibranch
+        name: multibranch-01
+        description: "placeholder multibranch - configure SCM source on the demo"
+      - kind: freeStyle
+        name: maven-job-01
+        description: "Represents a MavenModuleSet job (real config not in bundle)"
+  - kind: folder
+    name: team-02
+    displayName: team-02
+    items:
+      - kind: freeStyle
+        name: freestyle-002
+        description: "placeholder - real config not in support bundle"
+      - kind: freeStyle
+        name: freestyle-036
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-002
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-036
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-070
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-104
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-138
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: multibranch
+        name: multibranch-02
+        description: "placeholder multibranch - configure SCM source on the demo"
+      - kind: freeStyle
+        name: maven-job-02
+        description: "Represents a MavenModuleSet job (real config not in bundle)"
+  - kind: folder
+    name: team-03
+    displayName: team-03
+    items:
+      - kind: freeStyle
+        name: freestyle-003
+        description: "placeholder - real config not in support bundle"
+      - kind: freeStyle
+        name: freestyle-037
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-003
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-037
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-071
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-105
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-139
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: multibranch
+        name: multibranch-03
+        description: "placeholder multibranch - configure SCM source on the demo"
+      - kind: freeStyle
+        name: maven-job-03
+        description: "Represents a MavenModuleSet job (real config not in bundle)"
+  - kind: folder
+    name: team-04
+    displayName: team-04
+    items:
+      - kind: freeStyle
+        name: freestyle-004
+        description: "placeholder - real config not in support bundle"
+      - kind: freeStyle
+        name: freestyle-038
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-004
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-038
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-072
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-106
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-140
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: multibranch
+        name: multibranch-04
+        description: "placeholder multibranch - configure SCM source on the demo"
+      - kind: freeStyle
+        name: maven-job-04
+        description: "Represents a MavenModuleSet job (real config not in bundle)"
+  - kind: folder
+    name: team-05
+    displayName: team-05
+    items:
+      - kind: freeStyle
+        name: freestyle-005
+        description: "placeholder - real config not in support bundle"
+      - kind: freeStyle
+        name: freestyle-039
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-005
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-039
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-073
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-107
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-141
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: multibranch
+        name: multibranch-05
+        description: "placeholder multibranch - configure SCM source on the demo"
+  - kind: folder
+    name: team-06
+    displayName: team-06
+    items:
+      - kind: freeStyle
+        name: freestyle-006
+        description: "placeholder - real config not in support bundle"
+      - kind: freeStyle
+        name: freestyle-040
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-006
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-040
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-074
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-108
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-142
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-07
+    displayName: team-07
+    items:
+      - kind: freeStyle
+        name: freestyle-007
+        description: "placeholder - real config not in support bundle"
+      - kind: freeStyle
+        name: freestyle-041
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-007
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-041
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-075
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-109
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-143
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-08
+    displayName: team-08
+    items:
+      - kind: freeStyle
+        name: freestyle-008
+        description: "placeholder - real config not in support bundle"
+      - kind: freeStyle
+        name: freestyle-042
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-008
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-042
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-076
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-110
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-144
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-09
+    displayName: team-09
+    items:
+      - kind: freeStyle
+        name: freestyle-009
+        description: "placeholder - real config not in support bundle"
+      - kind: freeStyle
+        name: freestyle-043
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-009
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-043
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-077
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-111
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-145
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-10
+    displayName: team-10
+    items:
+      - kind: freeStyle
+        name: freestyle-010
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-010
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-044
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-078
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-112
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-146
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-11
+    displayName: team-11
+    items:
+      - kind: freeStyle
+        name: freestyle-011
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-011
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-045
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-079
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-113
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-147
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-12
+    displayName: team-12
+    items:
+      - kind: freeStyle
+        name: freestyle-012
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-012
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-046
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-080
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-114
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-148
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-13
+    displayName: team-13
+    items:
+      - kind: freeStyle
+        name: freestyle-013
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-013
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-047
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-081
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-115
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-149
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-14
+    displayName: team-14
+    items:
+      - kind: freeStyle
+        name: freestyle-014
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-014
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-048
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-082
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-116
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-150
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-15
+    displayName: team-15
+    items:
+      - kind: freeStyle
+        name: freestyle-015
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-015
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-049
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-083
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-117
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-151
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-16
+    displayName: team-16
+    items:
+      - kind: freeStyle
+        name: freestyle-016
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-016
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-050
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-084
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-118
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-152
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-17
+    displayName: team-17
+    items:
+      - kind: freeStyle
+        name: freestyle-017
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-017
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-051
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-085
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-119
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-153
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-18
+    displayName: team-18
+    items:
+      - kind: freeStyle
+        name: freestyle-018
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-018
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-052
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-086
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-120
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-154
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-19
+    displayName: team-19
+    items:
+      - kind: freeStyle
+        name: freestyle-019
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-019
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-053
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-087
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-121
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-155
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-20
+    displayName: team-20
+    items:
+      - kind: freeStyle
+        name: freestyle-020
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-020
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-054
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-088
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-122
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-156
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-21
+    displayName: team-21
+    items:
+      - kind: freeStyle
+        name: freestyle-021
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-021
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-055
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-089
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-123
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-157
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-22
+    displayName: team-22
+    items:
+      - kind: freeStyle
+        name: freestyle-022
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-022
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-056
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-090
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-124
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-158
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-23
+    displayName: team-23
+    items:
+      - kind: freeStyle
+        name: freestyle-023
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-023
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-057
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-091
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-125
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-159
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-24
+    displayName: team-24
+    items:
+      - kind: freeStyle
+        name: freestyle-024
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-024
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-058
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-092
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-126
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-160
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-25
+    displayName: team-25
+    items:
+      - kind: freeStyle
+        name: freestyle-025
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-025
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-059
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-093
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-127
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-161
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-26
+    displayName: team-26
+    items:
+      - kind: freeStyle
+        name: freestyle-026
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-026
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-060
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-094
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-128
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-162
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-27
+    displayName: team-27
+    items:
+      - kind: freeStyle
+        name: freestyle-027
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-027
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-061
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-095
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-129
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-163
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-28
+    displayName: team-28
+    items:
+      - kind: freeStyle
+        name: freestyle-028
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-028
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-062
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-096
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-130
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-164
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-29
+    displayName: team-29
+    items:
+      - kind: freeStyle
+        name: freestyle-029
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-029
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-063
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-097
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-131
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-165
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-30
+    displayName: team-30
+    items:
+      - kind: freeStyle
+        name: freestyle-030
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-030
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-064
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-098
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-132
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-166
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-31
+    displayName: team-31
+    items:
+      - kind: freeStyle
+        name: freestyle-031
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-031
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-065
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-099
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-133
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-167
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-32
+    displayName: team-32
+    items:
+      - kind: freeStyle
+        name: freestyle-032
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-032
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-066
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-100
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-134
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-168
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-33
+    displayName: team-33
+    items:
+      - kind: freeStyle
+        name: freestyle-033
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-033
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-067
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-101
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-135
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-169
+        definition:
+          cps:
+            script: "pipeline {\n  agent any\n  stages {\n    stage('Build') { steps { echo 'representative declarative pipeline' } }\n    stage('Test')  { steps { echo 'placeholder - real config not in support bundle' } }\n  }\n}"
+            sandbox: true
+  - kind: folder
+    name: team-34
+    displayName: team-34
+    items:
+      - kind: freeStyle
+        name: freestyle-034
+        description: "placeholder - real config not in support bundle"
+      - kind: pipeline
+        name: pipeline-034
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-068
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-102
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-136
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
+      - kind: pipeline
+        name: pipeline-170
+        definition:
+          cps:
+            script: "node {\n  stage('Build') { echo 'representative scripted pipeline' }\n  stage('Test')  { echo 'placeholder - real config not in support bundle' }\n}"
+            sandbox: true
