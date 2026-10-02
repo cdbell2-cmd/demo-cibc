@@ -11,8 +11,7 @@
 # The original full list is preserved in git history if fuller fidelity is
 # needed later (restore plugins.yaml + catalog.yaml and bump the version).
 plugins:
-  - id: cloudbees-folder          # folders + folder health metrics (jenkins.yaml)
+  - id: cloudbees-folder          # folder items (items.yaml)
   - id: configuration-as-code     # JCasC engine
   - id: workflow-aggregator       # pipeline suite: pipeline items + inline cps scripts
   - id: workflow-multibranch      # multibranch items
-  - id: custom-tools-plugin       # customTool installations (jenkins.yaml)

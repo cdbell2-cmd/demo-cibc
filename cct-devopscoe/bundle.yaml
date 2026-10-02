@@ -1,6 +1,6 @@
 apiVersion: 2
 id: cibc-cct-devopscoe-replica
-version: '2'
+version: '3'
 description: "CCT_DevOpsCOE controller replica (lean plugin set) from support bundle 014 (core 2.555.2.36756)"
 plugins:
   - plugins.yaml

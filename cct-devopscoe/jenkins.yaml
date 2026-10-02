@@ -138,27 +138,9 @@ jenkins:
             workDirSettings:
               disabled: false
               internalDir: "remoting"
-tool:
-  customTool:
-    installations:
-      - name: "Maven-3"
-        properties:
-          - installSource:
-              installers:
-                - zipExtractInstaller:
-                    url: "https://mirror.csclub.uwaterloo.ca/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz"
-                    subdir: "apache-maven-3.3.9/bin"
-      - name: "npm"
-unclassified:
-  abstractFolderConfiguration:
-    healthMetrics:
-      - worstChildHealthMetric:
-          nonRecursive: false
-      - averageChildHealthMetric
-      - jobStatusHealthMetric:
-          success: true
-          failure: true
-          unstable: true
-          unbuilt: true
-          countVirginJobs: false
-      - projectEnabledHealthMetric
+# NOTE: tool.customTool (Maven-3 / npm) and unclassified.abstractFolderConfiguration
+# (folder health-metric defaults) were removed when the bundle was trimmed to a
+# lean CAP-only plugin set: customTool needs the non-CAP custom-tools-plugin, and
+# abstractFolderConfiguration is not a registered symbol on this instance. Both are
+# cosmetic for the demo. Restore them (with custom-tools-plugin via a catalog) if
+# fuller fidelity is needed.
